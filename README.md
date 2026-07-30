@@ -88,4 +88,4 @@ cloud-resume-builder/
 
 ## 👩‍💻 Author
 
-**Anshika Sharma**haa ban
+**Anshika Sharma**

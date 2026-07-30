@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CloudResume Pro</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+    <div class="logo">
+        <i class="fa-solid fa-file-lines"></i>
+        <span>CloudResume</span>
+    </div>
+
+    <ul>
+
+       <li class="active">
+    <a href="#">
+        <i class="fa-solid fa-house"></i>
+        <span>Dashboard</span>
+    </a>
+</li>
+
+        <li>
+            <a href="#">
+    <i class="fa-solid fa-file"></i>
+    <span>My Resumes</span>
+</a>
+        </li>
+
+        <li>
+            <a href="#">
+    <i class="fa-solid fa-plus"></i>
+    <span>Create Resume</span>
+</a>
+        </li>
+
+        <li>
+            <a href="#">
+    <i class="fa-solid fa-layer-group"></i>
+    <span>Templates</span>
+</a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="login.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- ================= MAIN ================= -->
+
+<div class="main">
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="welcome">
+
+            <h2 id="welcomeUser">Welcome Back 👋</h2>
+
+            <p>Manage your resumes from one place.</p>
+
+        </div>
+
+        <div class="profile">
+
+            <img src="https://i.pravatar.cc/50" alt="Profile">
+
+        </div>
+
+    </header>
+
+    <!-- Statistics -->
+
+    <section class="stats">
+
+        <div class="card">
+
+            <i class="fa-solid fa-file"></i>
+
+            <h3>3</h3>
+
+            <p>Total Resumes</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-download"></i>
+
+            <h3>12</h3>
+
+            <p>Downloads</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <h3>5</h3>
+
+            <p>Templates</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h3>80%</h3>
+
+            <p>Profile Complete</p>
+
+        </div>
+
+    </section>
+
+    <!-- Resume Section -->
+
+    <section class="resume-section">
+
+       <div class="section-title">
+
+    <h2>My Resumes</h2>
+
+    <a href="resume-builder.html" class="create-btn">
+        <i class="fa-solid fa-plus"></i>
+        Create Resume
+    </a>
+
+</div>
+
+        <div class="resume-grid">
+
+            <div class="resume-card">
+
+                <h3>Software Engineer Resume</h3>
+
+                <p>Last Updated : Today</p>
+
+                <div class="buttons">
+
+                    <button>Edit</button>
+
+                    <button>Preview</button>
+
+                    <button>Download</button>
+
+                    <button class="delete">Delete</button>
+
+                </div>
+
+            </div>
+
+            <div class="resume-card">
+
+                <h3>AWS Cloud Engineer Resume</h3>
+
+                <p>Last Updated : Yesterday</p>
+
+                <div class="buttons">
+
+                    <button>Edit</button>
+
+                    <button>Preview</button>
+
+                    <button>Download</button>
+
+                    <button class="delete">Delete</button>
+
+                </div>
+
+            </div>
+
+            <div class="resume-card">
+
+                <h3>Internship Resume</h3>
+
+                <p>Last Updated : 2 Days Ago</p>
+
+                <div class="buttons">
+
+                    <button>Edit</button>
+
+                    <button>Preview</button>
+
+                    <button>Download</button>
+
+                    <button class="delete">Delete</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Recent Activity -->
+
+    <section class="activity">
+
+        <h2>Recent Activity</h2>
+
+        <ul>
+
+            <li>
+                <i class="fa-solid fa-circle-check"></i>
+                Resume Created Successfully
+            </li>
+
+            <li>
+                <i class="fa-solid fa-download"></i>
+                Resume Downloaded
+            </li>
+
+            <li>
+                <i class="fa-solid fa-pen"></i>
+                Resume Updated
+            </li>
+
+            <li>
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                Profile Photo Uploaded
+            </li>
+
+        </ul>
+
+    </section>
+
+</div>
+
+<script>
+const userName = localStorage.getItem("userName");
+
+if (userName) {
+    document.getElementById("welcomeUser").textContent =
+        `Welcome Back, ${userName} 👋`;
+}
+</script>
+
+<script src="js/preview.js"></script>
+
+</body>
+</html>

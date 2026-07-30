@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Builder | CloudResume Pro</title>
+
+    <link rel="stylesheet" href="resume-builder.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+    <div class="logo">
+        <i class="fa-solid fa-file-lines"></i>
+        <span>CloudResume</span>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="resume-builder.html">
+                <i class="fa-solid fa-file"></i>
+                <span>Resume Builder</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Templates</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="login.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main">
+
+<form>
+
+<!-- Personal Details -->
+
+<section class="section">
+
+<h3>Personal Details</h3>
+
+<div class="grid">
+
+<input
+type="text"
+id="fullName"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Email"
+required>
+
+<input
+type="text"
+id="phone"
+placeholder="Phone Number">
+
+<input
+type="text"
+id="address"
+placeholder="Address">
+
+<input
+type="text"
+id="linkedin"
+placeholder="LinkedIn">
+
+<input
+type="text"
+id="github"
+placeholder="GitHub">
+
+</div>
+
+<textarea
+id="summary"
+placeholder="Professional Summary">
+</textarea>
+</section>
+
+<!-- Education -->
+
+<section class="section">
+
+<h3>Education</h3>
+
+<div class="grid">
+
+<input
+id="college"
+type="text"
+placeholder="College Name">
+
+<input
+id="degree"
+type="text"
+placeholder="Degree">
+
+<input 
+id="branch"
+type="text" 
+placeholder="Branch">
+
+<input 
+id="CGPA"
+type="text" 
+placeholder="CGPA">
+
+<input type="date">
+
+<input type="date">
+
+</div>
+
+</section>
+
+<!-- Experience -->
+
+<section class="section">
+
+<h3>Experience</h3>
+
+<div class="grid">
+
+<input type="text" placeholder="Company Name">
+
+<input type="text" placeholder="Job Role">
+
+<input type="date">
+
+<input type="date">
+
+</div>
+
+<textarea placeholder="Describe your work experience"></textarea>
+
+</section>
+
+<!-- Projects -->
+
+<section class="section">
+
+<h3>Projects</h3>
+
+<div class="grid">
+
+<input
+type="text"
+id="project"
+placeholder="Project Name">
+
+<input type="text" placeholder="Technology Used">
+
+<input type="url" placeholder="GitHub Link">
+
+<input type="url" placeholder="Live Demo Link">
+
+</div>
+
+<textarea placeholder="Project Description"></textarea>
+
+</section>
+
+<!-- Skills -->
+
+<section class="section">
+
+<h3>Skills</h3>
+
+<input
+type="text"
+id="skills"
+placeholder="Example: HTML, CSS, Java, AWS, Python">
+
+<!-- Certifications -->
+
+<section class="section">
+
+<h3>Certifications</h3>
+
+<input type="text" placeholder="AWS Cloud Practitioner">
+
+</section>
+
+<!-- Languages -->
+
+<section class="section">
+
+<h3>Languages</h3>
+
+<input type="text" placeholder="English, Hindi">
+
+</section>
+
+<!-- Buttons -->
+
+<div class="action-buttons">
+
+<button type="submit">Save Resume</button>
+
+<button type="button" id="previewBtn" class="preview-btn">
+    Preview Resume
+</button>
+
+<button type="button">Download PDF</button>
+
+</div>
+
+</form>
+
+</div>
+
+<script src="js/builder.js"></script>
+
+</body>
+
+</html>

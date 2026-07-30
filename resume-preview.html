@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Preview | CloudResume Pro</title>
+
+    <link rel="stylesheet" href="preview.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body id="previewBody">
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="top-bar">
+
+            <a href="resume-builder.html" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Builder
+            </a>
+
+            <button id="downloadBtn" class="download-btn">
+                <i class="fa-solid fa-download"></i>
+                Download PDF
+            </button>
+
+        </div>
+
+        <!-- Resume -->
+
+        <div class="resume">
+
+            <!-- Personal -->
+
+            <div class="header">
+
+                <h1 id="previewName">Your Name</h1>
+
+                <h3 id="previewRole">Professional Title</h3>
+
+                <div class="contact" id="previewContact">
+
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                        anshika@email.com
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9876543210
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Lucknow, India
+                    </span>
+
+                </div>
+
+                <div class="links">
+                    <a href="#">LinkedIn</a>
+                    |
+                    <a href="#">GitHub</a>
+                </div>
+
+            </div>
+
+            <!-- Summary -->
+
+            <section>
+
+                <h2>Professional Summary</h2>
+
+                <p id="previewSummary"></p>
+
+            </section>
+
+            <!-- Education -->
+
+            <section>
+
+                <h2>Education</h2>
+
+                <div class="item">
+
+                    <h4>B.Tech - Computer Science</h4>
+
+                    <p>BBDITM, Lucknow</p>
+
+                    <p>2023 - 2027</p>
+
+                </div>
+
+            </section>
+
+            <!-- Experience -->
+
+            <section>
+
+                <h2>Experience</h2>
+
+                <div class="item">
+
+                    <h4>AWS Cloud Intern</h4>
+
+                    <p>ABC Technologies</p>
+
+                    <p>Jan 2026 - Present</p>
+
+                    <ul>
+
+                        <li>Worked with AWS EC2, S3 and Lambda.</li>
+
+                        <li>Built cloud-based web applications.</li>
+
+                        <li>Monitored applications using CloudWatch.</li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <!-- Projects -->
+
+            <section>
+
+                <h2>Projects</h2>
+
+                <div class="item">
+
+                    <h4 id="previewProjectTitle">Online Resume Builder</h4>
+
+                    <p>HTML | CSS | JavaScript | AWS</p>
+
+                    <ul>
+
+                        <li>Developed a cloud-based resume builder.</li>
+
+                        <li>Integrated API Gateway and Lambda.</li>
+
+                        <li>Stored resume data in DynamoDB.</li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <!-- Skills -->
+
+            <section>
+
+                <h2>Skills</h2>
+
+                <div class="skills" id="previewSkills"></div>
+
+            </section>
+
+            <!-- Certifications -->
+
+            <section>
+
+                <h2>Certifications</h2>
+
+                <ul>
+
+                    <li>AWS Cloud Practitioner</li>
+
+                    <li>AWS Solutions Architect (Learning)</li>
+
+                </ul>
+
+            </section>
+
+            <!-- Languages -->
+
+            <section>
+
+                <h2>Languages</h2>
+
+                <p>English | Hindi</p>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script src="js/preview.js"></script>
+
+</body>

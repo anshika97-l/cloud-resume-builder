@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#F4F8FC;
+
+    height:100vh;
+
+}
+
+.container{
+
+    display:flex;
+
+    height:100vh;
+
+}
+
+/* LEFT SIDE */
+
+.left{
+
+    width:50%;
+
+    background:linear-gradient(135deg,#2563EB,#1D4ED8);
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+.left h1{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.left p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    width:80%;
+
+}
+
+.left img{
+
+    width:300px;
+
+    margin-top:40px;
+
+}
+
+/* RIGHT SIDE */
+
+.right{
+
+    width:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:white;
+
+}
+
+.login-box{
+
+    width:420px;
+
+}
+
+.login-box h2{
+
+    font-size:36px;
+
+    color:#1E293B;
+
+}
+
+.login-box p{
+
+    color:#64748B;
+
+    margin:10px 0 30px;
+
+}
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+}
+
+.input-box i{
+
+    color:#2563EB;
+
+    margin-right:15px;
+
+}
+
+.input-box input{
+
+    border:none;
+
+    outline:none;
+
+    width:100%;
+
+    font-size:16px;
+
+}
+
+/* OPTIONS */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+.options a{
+
+    text-decoration:none;
+
+    color:#2563EB;
+
+}
+
+.login-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* DIVIDER */
+
+.divider{
+
+    text-align:center;
+
+    margin:30px 0;
+
+    position:relative;
+
+}
+
+.divider span{
+
+    background:white;
+
+    padding:0 15px;
+
+    color:#64748B;
+
+}
+
+.divider::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:1px;
+
+    background:#CBD5E1;
+
+    left:0;
+
+    top:50%;
+
+    z-index:-1;
+
+}
+
+/* GOOGLE BUTTON */
+
+.google,.github{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    margin-bottom:15px;
+
+    transition:.3s;
+
+}
+
+.google{
+
+    background:#EA4335;
+
+    color:white;
+
+}
+
+.google:hover{
+
+    background:#D93025;
+
+}
+
+.github{
+
+    background:#24292E;
+
+    color:white;
+
+}
+
+.github:hover{
+
+    background:#111827;
+
+}
+
+.register{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.register a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.left{
+
+    width:100%;
+
+    height:40vh;
+
+}
+
+.right{
+
+    width:100%;
+
+    height:60vh;
+
+}
+
+.login-box{
+
+    width:90%;
+
+}
+
+.left img{
+
+    width:180px;
+
+}
+
+.left h1{
+
+    font-size:32px;
+
+}
+
+}
+.logo{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.logo a{
+    text-decoration:none;
+    color:#2563EB;
+    font-size:28px;
+    font-weight:bold;
+}

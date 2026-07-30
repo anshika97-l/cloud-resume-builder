@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Resume Template | CloudResume Pro</title>
+
+    <link rel="stylesheet" href="template.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Select Your Resume Template</h1>
+
+    <p>Choose a professional resume design before previewing or downloading.</p>
+
+</header>
+
+<div class="template-container">
+
+    <!-- Template 1 -->
+    <div class="card">
+        <img src="https://picsum.photos/300/420?1">
+        <h2>Classic</h2>
+        <p>Simple ATS Friendly Resume</p>
+
+        <a href="#" class="btn template-btn" data-template="classic">
+            Use Template
+        </a>
+    </div>
+
+    <!-- Template 2 -->
+    <div class="card">
+        <img src="https://picsum.photos/300/420?2">
+        <h2>Modern</h2>
+        <p>Clean and Modern Design</p>
+
+        <a href="#" class="btn template-btn" data-template="modern">
+            Use Template
+        </a>
+    </div>
+
+    <!-- Template 3 -->
+    <div class="card">
+        <img src="https://picsum.photos/300/420?3">
+        <h2>Professional</h2>
+        <p>Best for Corporate Jobs</p>
+
+        <a href="#" class="btn template-btn" data-template="professional">
+            Use Template
+        </a>
+    </div>
+
+    <!-- Template 4 -->
+    <div class="card">
+        <img src="https://picsum.photos/300/420?4">
+        <h2>Minimal</h2>
+        <p>Elegant Minimal Design</p>
+
+        <a href="#" class="btn template-btn" data-template="minimal">
+            Use Template
+        </a>
+    </div>
+
+    <!-- Template 5 -->
+    <div class="card">
+        <img src="https://picsum.photos/300/420?5">
+        <h2>Creative</h2>
+        <p>Perfect for Designers</p>
+
+        <a href="#" class="btn template-btn" data-template="creative">
+            Use Template
+        </a>
+    </div>
+
+    <!-- Template 6 -->
+    <div class="card">
+        <img src="https://picsum.photos/300/420?6">
+        <h2>Executive</h2>
+        <p>Premium Executive Resume</p>
+
+        <a href="#" class="btn template-btn" data-template="executive">
+            Use Template
+        </a>
+    </div>
+
+</div>
+
+<script>
+
+const buttons = document.querySelectorAll(".template-btn");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const template = this.dataset.template;
+
+        localStorage.setItem("selectedTemplate", template);
+
+        console.log("Selected Template:", template);
+
+        window.location.href = "resume-preview.html";
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

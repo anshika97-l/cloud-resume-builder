@@ -1,0 +1,421 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#EEF2FF;
+    padding:40px;
+    color:#1E293B;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+/* ==========================
+   TOP BAR
+========================== */
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.back-btn{
+    text-decoration:none;
+    color:#2563EB;
+    font-weight:600;
+    font-size:16px;
+}
+
+.back-btn i{
+    margin-right:8px;
+}
+
+.download-btn{
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.download-btn:hover{
+    background:#1D4ED8;
+}
+
+/* ==========================
+   RESUME
+========================== */
+
+.resume{
+    background:white;
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.header{
+    text-align:center;
+    border-bottom:2px solid #E2E8F0;
+    padding-bottom:25px;
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:38px;
+    color:#2563EB;
+    margin-bottom:8px;
+}
+
+.header h3{
+    color:#475569;
+    font-weight:500;
+    margin-bottom:18px;
+}
+
+.contact{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-bottom:15px;
+}
+
+.contact span{
+    color:#64748B;
+    font-size:15px;
+}
+
+.contact i{
+    color:#2563EB;
+    margin-right:6px;
+}
+
+.links a{
+    color:#2563EB;
+    text-decoration:none;
+    font-weight:500;
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section{
+    margin-bottom:30px;
+}
+
+section h2{
+    color:#2563EB;
+    font-size:22px;
+    margin-bottom:15px;
+    border-left:5px solid #2563EB;
+    padding-left:10px;
+}
+
+section p{
+    line-height:1.8;
+    color:#475569;
+}
+
+.item{
+    margin-bottom:20px;
+}
+
+.item h4{
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.item p{
+    margin-bottom:4px;
+}
+
+.item ul{
+    margin-top:10px;
+    margin-left:20px;
+}
+
+.item li{
+    margin-bottom:8px;
+    line-height:1.7;
+}
+
+/* ==========================
+   SKILLS
+========================== */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skills span{
+    background:#DBEAFE;
+    color:#2563EB;
+    padding:10px 18px;
+    border-radius:25px;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* ==========================
+   CERTIFICATIONS
+========================== */
+
+section ul{
+    margin-left:20px;
+}
+
+section ul li{
+    margin-bottom:8px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+body{
+    padding:15px;
+}
+
+.resume{
+    padding:25px;
+}
+
+.top-bar{
+    flex-direction:column;
+    gap:15px;
+    align-items:flex-start;
+}
+
+.contact{
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+}
+
+.header h1{
+    font-size:28px;
+}
+
+.header h3{
+    font-size:18px;
+}
+
+section h2{
+    font-size:20px;
+}
+
+}
+
+body.classic{
+    background:#f3f4f6;
+}
+
+.classic .resume{
+    background:white;
+}
+
+body.modern{
+    background:#dbeafe;
+}
+
+.modern .resume{
+    background:white;
+    border-left:8px solid #2563eb;
+}
+
+body.professional{
+    background:#eceff1;
+}
+
+.professional .resume{
+    border-top:10px solid #37474f;
+}
+
+body.minimal{
+    background:#ffffff;
+}
+
+.minimal .resume{
+    border:1px solid #ccc;
+    box-shadow:none;
+}
+
+body.creative{
+    background:linear-gradient(135deg,#7b2ff7,#f107a3);
+}
+
+.creative .resume{
+    border-radius:18px;
+}
+
+body.executive{
+    background:#222;
+}
+
+.executive .resume{
+    border-top:12px solid gold;
+}
+
+/* ==========================
+   CLASSIC TEMPLATE
+========================== */
+
+body.classic{
+    background:#f5f5f5;
+}
+
+.classic .resume{
+    background:white;
+    border-radius:0;
+    box-shadow:none;
+    border:1px solid #ddd;
+}
+
+.classic .header h1{
+    color:#000;
+}
+
+.classic section h2{
+    color:#000;
+    border-left:4px solid #000;
+}
+
+/* ==========================
+   MODERN TEMPLATE
+========================== */
+
+body.modern{
+    background:#dbeafe;
+}
+
+.modern .resume{
+    background:white;
+    border-left:10px solid #2563eb;
+    border-radius:18px;
+}
+
+.modern .header h1{
+    color:#2563eb;
+}
+
+/* ==========================
+   PROFESSIONAL TEMPLATE
+========================== */
+
+body.professional{
+    background:#eceff1;
+}
+
+.professional .resume{
+    background:white;
+    border-top:12px solid #37474f;
+}
+
+.professional .header h1{
+    color:#37474f;
+}
+
+.professional section h2{
+    color:#37474f;
+    border-left:5px solid #37474f;
+}
+
+/* ==========================
+   MINIMAL TEMPLATE
+========================== */
+
+body.minimal{
+    background:white;
+}
+
+.minimal .resume{
+    background:white;
+    box-shadow:none;
+    border:1px solid #ddd;
+}
+
+.minimal .header{
+    border-bottom:1px solid #ddd;
+}
+
+.minimal .header h1{
+    color:#222;
+}
+
+.minimal section h2{
+    color:#222;
+    border:none;
+    padding-left:0;
+}
+
+/* ==========================
+   CREATIVE TEMPLATE
+========================== */
+
+body.creative{
+    background:linear-gradient(135deg,#7b2ff7,#f107a3);
+}
+
+.creative .resume{
+    border-radius:25px;
+}
+
+.creative .header h1{
+    color:#e91e63;
+}
+
+.creative section h2{
+    color:#7b2ff7;
+    border-left:5px solid #e91e63;
+}
+
+/* ==========================
+   EXECUTIVE TEMPLATE
+========================== */
+
+body.executive{
+    background:#1f2937;
+}
+
+.executive .resume{
+    background:white;
+    border-top:12px solid gold;
+}
+
+.executive .header h1{
+    color:#222;
+}
+
+.executive section h2{
+    color:#222;
+    border-left:5px solid gold;
+}
+
